@@ -1,0 +1,10 @@
+# Cluster Configuration
+
+[cluster]
+workers = 8
+type = "server"
+boot = "./sample-server"
+
+[backend]
+runner = "zune"
+args = [ "run", "init.luau" ]
